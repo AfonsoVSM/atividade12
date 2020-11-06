@@ -1,8 +1,10 @@
 <?php
-    define("pi,3.14");
-    $raio=rand(1,10);
-    $area= $pi *raio *$raio; 
-{
-echo "A area é" .$area;
+    function area ($raio){
+        $area = $raio *$raio *PI;
+        DEFINE('PI',3.14);
+        $raio = rand(1,300);
+        return $area;
 }
+echo "A area da circunferencia com raio".$raio."e".area($raio);
+
 ?>
